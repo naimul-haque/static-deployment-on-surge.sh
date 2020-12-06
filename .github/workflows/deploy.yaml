@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    # Checking out repository under $GITHUB_WORKSPACE, so your workflow can access it.
+    # Checking out repository under $GITHUB_WORKSPACE, so that workflow can access it.
     - uses: actions/checkout@v2
 
     # Install Node.js

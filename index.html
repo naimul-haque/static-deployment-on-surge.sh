@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
-  <body class="text-gray-900 antialiased">
+  <body class="text-gray-900 antialiased bg-gradient-to-tr from-purple-500 to-blue-500">
     <div class="min-h-screen flex items-center justify-center text-white">
-      <div class="max-w-3xl mx-auto bg-gradient-to-tr from-purple-500 to-blue-500 p-24">
-        <h2 class="font-bold text-6xl"> Static Deployment on Surge 🌈</h2>
-        <div class="mt-8">
-          <div class="mb-4">
-            <h3 class="text-xl font-semibold uppercase">Usage</h3>
-            <div class="flex space-x-2 mt-1">
-              <div class="h-1 w-2 bg-white"></div>
-              <div class="h-1 w-2 bg-green-400"></div>
-              <div class="h-1 w-2 bg-yellow-400"></div>
-            </div>
+      <div class="max-w-3xl mx-auto px-6 md:px-24 py-12">
+        <!-- headline -->
+        <h2 class="font-bold text-5xl sm:text-6xl md:text-7xl"> Static <br> Deployment on <br> Surge 🌈</h2>
+
+        <div class="bg-gray-900 rounded p-6 mt-10 lg:mt-16"> 
+          <div class="flex space-x-2 mb-4">
+            <div class="h-2 w-2 rounded-full bg-red-500"></div>
+            <div class="h-2 w-2 rounded-full bg-yellow-500"></div>
+            <div class="h-2 w-2 rounded-full bg-green-500"></div>
           </div>
+          <ul class="text-gray-300 leading-relaxed">
+            <li> <span class="text-yellow-500 font-semibold"> → </span> git clone https://github.com/naimul-haque/static-deployment-on-surge.sh.git </li>
+            <li> <span class="text-yellow-500 font-semibold"> → </span> rm -rf .git </li>
+            <li> <span class="text-yellow-500 font-semibold"> → </span> git remote add origin https://github.com/user/repo.git</li>
+
+            <li class="text-gray-600 text-sm mt-3"> # Put your static site replacing index.html </li>
+            <li class="text-gray-600 text-sm mb-3"> # Create SURGE_TOKEN and SURGE_DOMAIN in repository secrets </li>
+
+
+            <li> <span class="text-yellow-500 font-semibold"> → </span> git push origin master </li>
+          </ul>
         </div>
       </div>
     </div>
