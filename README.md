@@ -1,4 +1,4 @@
-# Static Deployment on Surge 🌈
+# Static Deployment on Surge
 
 A simple starter to host static sites on Surge.sh 🌈 
 
