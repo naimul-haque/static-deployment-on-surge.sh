@@ -3,7 +3,7 @@ name: Deploy on Surge.sh
 # Specify when the action will run
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 # Specify workflow jobs
 jobs:
